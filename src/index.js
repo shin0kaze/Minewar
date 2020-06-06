@@ -38,7 +38,7 @@ class BootScene extends Phaser.Scene {
  * Функция подготовительного этапа и для загрузки ассетов.
  */
   preload() {
-    this.load.atlas('boot', '/res/boot/boot.png', '/res/boot/boot.json');
+    this.load.atlas('boot', './res/boot/boot.png', './res/boot/boot.json');
   }
 /**
  * Функция при создании сцены и запуске сцены.

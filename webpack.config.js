@@ -1,7 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
-const ghpages = require('gh-pages');
 /*
 const productionConfig = merge([
   {
@@ -26,7 +25,6 @@ module.exports = {
     app: './src/index.js',
     'production-dependencies': ['phaser']
   },
-  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundle.js'
