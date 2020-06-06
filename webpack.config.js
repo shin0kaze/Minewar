@@ -1,13 +1,32 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const ghpages = require('gh-pages');
+/*
+const productionConfig = merge([
+  {
+    ...
+    output: {
+      ...
 
+      // Needed for code splitting to work in nested paths
+      publicPath: "/",
+
+
+      // Tweak this to match your GitHub project name
+      publicPath: "/webpack-demo/",
+
+    },
+  },
+  ...
+]);
+*/
 module.exports = {
   entry: {
     app: './src/index.js',
     'production-dependencies': ['phaser']
   },
-
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundle.js'

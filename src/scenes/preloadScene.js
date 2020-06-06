@@ -1,5 +1,10 @@
 import GameScene from './gameScene';
-
+/**
+ * Отвечает за загрузку всех ресурсов игры.
+ * TODO тут все неаккуратно спижжено с туториала, который,
+ * в общем то не очень заботился о структуре проекта,
+ * необходимо переделать это гавно!
+ */
 export default class PreloadScene extends Phaser.Scene {
 
   constructor() {
@@ -90,9 +95,9 @@ export default class PreloadScene extends Phaser.Scene {
       {
         atlas: 'guiElem',
         frame: 'check',
-        frameWidth: 120,
-        frameHeight: 30,
-        endFrame: 3
+        frameWidth: 26,
+        frameHeight: 26,
+        endFrame: 4
       });
   }
 

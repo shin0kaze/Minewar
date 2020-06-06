@@ -9,10 +9,15 @@
             "command": "yarn webpack-dev-server"
         },
         {
-            "label": "stop",
+            "label": "compile",
             "type": "shell",
-            "command": "hello"
+            "command": "yarn run webpack"
         },
+        {
+            "label": "deploy",
+            "type": "shell",
+            "command": "yarn deploy"
+        }
     ]
     
 }
