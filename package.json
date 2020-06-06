@@ -20,6 +20,6 @@
     "phaser": "^3.0.0"
   },
   "scripts": {
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/shin0kaze/shin0kaze.github.io.git"
   }
 }
