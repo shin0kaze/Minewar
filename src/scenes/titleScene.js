@@ -32,5 +32,9 @@ export default class TitleScene extends Phaser.Scene {
     this.add.existing(this.optionsButton);
     this.creditsButton = new Button(this, width, height + 150, btnTexture, () => { this.scene.start('Credits') }, ui.btnCredits);
     this.add.existing(this.creditsButton);
+
+    this.creditsButton = new Button(this, width, height + 190, btnTexture, () => { this.scene.start('Credits') }, ui.btnCredits);
+    this.add.existing(this.creditsButton);
+
   }
 };
